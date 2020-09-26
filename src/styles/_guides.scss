@@ -1,0 +1,18 @@
+.post {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        text-align: center;
+    }
+    padding: 1rem;
+}
+
+.thumbnail {
+    padding: 1rem;
+}
+
+.content {
+    padding: 1rem;
+    text-align: left;
+}

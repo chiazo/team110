@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
+
 import Layout from "../components/layout"
 
 const Guides = ({ data }) => {
@@ -10,13 +12,24 @@ const Guides = ({ data }) => {
         <h1>Guides</h1>
         <div className="guide-list">
           {posts.map(post => (
-            <div key={post.node.id} className="post-list__item">
-              <h2>{post.node.frontmatter.title}</h2>
-              <p>{post.node.frontmatter.date}</p>
-              <div className="post-list__excerpt">
-                <p>{post.node.excerpt}</p>
+            <div key={post.node.id} className="post">
+              <div className="thumbnail">
+                <Link to={post.node.frontmatter.slug}>
+                  <Img
+                    fixed={
+                      post.node.frontmatter.thumbnail.childImageSharp.fixed
+                    }
+                  />
+                </Link>
               </div>
-              <Link to={post.node.frontmatter.slug}>Read More</Link>
+              <div className="post-content">
+                <h2>{post.node.frontmatter.title}</h2>
+                <p>{post.node.frontmatter.date}</p>
+                <div className="excerpt">
+                  <p>{post.node.excerpt}</p>
+                </div>
+                <Link to={post.node.frontmatter.slug}>Read More</Link>
+              </div>
             </div>
           ))}
         </div>
@@ -40,6 +53,13 @@ export const pageQuery = graphql`
             slug
             date(formatString: "MMMM DD, YYYY")
             title
+            thumbnail {
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
