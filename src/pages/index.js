@@ -14,6 +14,10 @@ const Home = () => {
       name: "Shift Lead Form",
       link: "https://forms.gle/aUGtnnx8AGHcGEuE7",
     },
+    {
+      name: "TA Job Advice",
+      link: "http://intranet.comp110.com/",
+    },
   ]
   return (
     <Layout>
