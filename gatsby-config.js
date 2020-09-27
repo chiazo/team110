@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    pathPrefix: "/team110",
+    pathPrefix: 'team110',
     title: "Team110",
     menuLinks: [
       {
