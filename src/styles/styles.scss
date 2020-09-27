@@ -1,2 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+$base-color: #1a202c;
+$hover: #77c5dd;
+$button: #0f5d75;
+$highlight: #2095c3;
+$green: rgb(72, 114, 72);
+$brightgreen: rgb(81, 153, 39);
+$red: rgb(144, 45, 70);
+$text: #eee;
+$pink: purple;
+$blue: rgb(39, 102, 153);
+$purple: rgb(77, 97, 214);
+$orange: rgb(196, 117, 33);
+$brightred: rgb(196, 33, 82);
+$yellow: rgb(165, 149, 4);
+$shadow: rgb(22, 22, 22);
+
+@import "base";
 @import "button";
 @import "guides";
+@import "container";
+@import "header";
+@import "footer";
+@import "sidebar";

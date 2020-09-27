@@ -2,40 +2,34 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/layout"
+import { Layout } from "../components/"
 
 const Guides = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   return (
     <Layout>
-      <div>
+      <div className="page">
         <h1>Guides</h1>
         <div className="guide-list">
           {posts.map(post => (
-            <div key={post.node.id} className="post">
-              <div className="thumbnail">
-                <Link to={post.node.frontmatter.slug}>
+            <Link to={post.node.frontmatter.slug}>
+              <div key={post.node.id} className="guide">
+                <div className="thumbnail">
                   <Img
                     fixed={
                       post.node.frontmatter.thumbnail.childImageSharp.fixed
                     }
                   />
-                </Link>
-              </div>
-              <div className="post-content">
-                <h2>{post.node.frontmatter.title}</h2>
-                <p>{post.node.frontmatter.date}</p>
-                <div className="excerpt">
-                  <p>{post.node.excerpt}</p>
                 </div>
-                <Link to={post.node.frontmatter.slug}>Read More</Link>
+                <div className="guide-content">
+                  <h2>{post.node.frontmatter.title}</h2>
+                  <div className="excerpt"></div>
+                  {/* <Link to={post.node.frontmatter.slug}>Read More</Link> */}
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
-        <p>
-          <Link to="/about">About</Link>
-        </p>
       </div>
     </Layout>
   )
@@ -55,7 +49,7 @@ export const pageQuery = graphql`
             title
             thumbnail {
               childImageSharp {
-                fixed(width: 200, height: 200) {
+                fixed(width: 100, height: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }

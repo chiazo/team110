@@ -1,18 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Button from "../components/button"
+import { Layout } from "../components/"
 
 const About = () => {
   return (
     <Layout>
-      <div>
-        <h1>About Page</h1>
-        <p>
-          <Link to="/">Home</Link>
-          <Button text="hi" />
-        </p>
+      <div className="page">
+        <h1>About the Team!</h1>
       </div>
     </Layout>
   )

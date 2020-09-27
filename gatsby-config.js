@@ -9,10 +9,6 @@ module.exports = {
     title: "Team110",
     menuLinks: [
       {
-        name: "home",
-        link: "/",
-      },
-      {
         name: "about",
         link: "/about",
       },

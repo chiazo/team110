@@ -13,11 +13,20 @@ export default function Markdown({
       <section>
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
+
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </section>
+      {frontmatter.author.length > 0 && (
+        <section>
+          <h4>Contributors:</h4>
+          {frontmatter.author.map(author => (
+            <li>{author}</li>
+          ))}
+        </section>
+      )}
     </Layout>
   )
 }
@@ -30,6 +39,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        author
       }
     }
   }

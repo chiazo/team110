@@ -1,20 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Button from "../components/button"
+import { Layout, Sidebar } from "../components/"
 
 const Home = () => {
   return (
     <Layout>
       <div>
-        <h1>Hello Chiazo!</h1>
-        <p>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Button text="Hello" />
+        <h1 className="highlight">Welcome to the Team110 Site!</h1>
+        <p className="outline">
+          This is a hub for all things at the intersection of COMP110, COMP211,
+          and literally everything else we do as a part of Team110.
         </p>
       </div>
+      <Sidebar />
     </Layout>
   )
 }

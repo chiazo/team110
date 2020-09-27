@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import "normalize.css"
 
-import Header from "./header"
+import { Header, Footer } from "./"
 import "../styles/styles.scss"
 
 const Layout = ({ children }) => {
@@ -22,27 +23,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata?.title || `Title`}
-        menuLinks={data.site.siteMetadata?.menuLinks}
-      />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <div className="site">
+        <Header
+          siteTitle={data.site.siteMetadata?.title || `Title`}
+          menuLinks={data.site.siteMetadata?.menuLinks}
+        />
+        <div className="site-content">
+          <main>{children}</main>
+        </div>
+        <Footer />
       </div>
     </>
   )

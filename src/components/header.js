@@ -2,52 +2,22 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
+import "normalize.css"
+import "../styles/styles.scss"
+
 const Header = ({ siteTitle, menuLinks }) => (
-  <header
-    style={{
-      background: "rebeccapurple",
-      marginBottom: "1.45rem",
-    }}
-  >
-    <div
-      style={{
-        background: "rebeccapurple",
-        marginBottom: "1.45rem",
-      }}
-    >
-      <div
-        style={{
-          margin: "0 auto",
-          maxWidth: 960,
-          padding: "1.45rem 1.0875rem",
-          display: "flex",
-          justifyItems: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <h1 style={{ margin: 0, flex: 1 }}>
-          <Link
-            to="/"
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-          >
-            {siteTitle}
-          </Link>
+  <header className="header">
+    <div>
+      <div>
+        <h1 className="site-title">
+          <Link to="/">{siteTitle}</Link>
         </h1>
         <div>
           <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
+            <ul>
               {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `1rem`,
-                  }}
-                >
-                  <Link style={{ color: `white` }} to={link.link}>
+                <li key={link.name} className="link">
+                  <Link to={link.link} activeClassName="active">
                     {link.name}
                   </Link>
                 </li>
