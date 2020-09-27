@@ -1,7 +1,6 @@
 .guide-list {
     display: flex;
     justify-content: center;
-    // flex-direction: row;
     flex-wrap: wrap;
 
     &::before,
@@ -25,18 +24,18 @@
     height: 300px;
     border-radius: 3px;
     padding: 1rem;
-    background-color: rgba($highlight, 0.1);
+    background-color: rgba($highlight, 0.4);
     border: 5px double $text;
     max-width: 300px;
     box-shadow: 3px 3px 5px $shadow;
 
     &:hover {
-        background-color: rgba($highlight, 0.4);
+        background-color: rgba($highlight, 0.2);
     }
 
     h2 {
         background: $base-color;
-        padding: 1rem;
+        padding: 0.5rem;
         border: 3px solid rgba($text, 0.7);
     }
 }

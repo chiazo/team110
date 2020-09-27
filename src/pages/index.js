@@ -3,6 +3,18 @@ import React from "react"
 import { Layout, Sidebar } from "../components/"
 
 const Home = () => {
+  const links = [
+    { name: "Course Site", link: "https://20f.comp110.com/" },
+    {
+      name: "Virtual Sitterson",
+      link:
+        "https://unc.zoom.us/j/97191695899?pwd=cERyWklHbkhQKzJjRko0V2lCZmVzQT09",
+    },
+    {
+      name: "Shift Lead Form",
+      link: "https://forms.gle/aUGtnnx8AGHcGEuE7",
+    },
+  ]
   return (
     <Layout>
       <div>
@@ -12,7 +24,7 @@ const Home = () => {
           and literally everything else we do as a part of Team110.
         </p>
       </div>
-      <Sidebar />
+      <Sidebar links={links} />
     </Layout>
   )
 }

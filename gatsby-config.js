@@ -6,6 +6,7 @@
 
 module.exports = {
   siteMetadata: {
+    pathPrefix: "/team110",
     title: "Team110",
     menuLinks: [
       {
@@ -31,6 +32,14 @@ module.exports = {
               maxWidth: 600,
             },
           },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `100`,
+              maintainCase: true,
+              elements: [`h1`, `h2`, `h3`, `h4`],
+            },
+          },
         ],
       },
     },
@@ -39,13 +48,6 @@ module.exports = {
       options: {
         name: `markdown`,
         path: `${__dirname}/src/pages/markdown`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
