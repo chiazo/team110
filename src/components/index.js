@@ -1,6 +1,0 @@
-export { default as Button } from "./button.js"
-export { default as Container } from "./container.js"
-export { default as Header } from "./header.js"
-export { default as Layout } from "./layout.js"
-export { default as Footer } from "./footer.js"
-export { default as Sidebar } from "./sidebar.js"
