@@ -27,17 +27,16 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: `gatsby-remark-autolink-headers`,
             options: {
-              maxWidth: 600,
+              maintainCase: true,
+              elements: [`h1`, `h2`, `h3`, `h4`],
             },
           },
           {
-            resolve: `gatsby-remark-autolink-headers`,
+            resolve: `gatsby-remark-images`,
             options: {
-              offsetY: `100`,
-              maintainCase: true,
-              elements: [`h1`, `h2`, `h3`, `h4`],
+              maxWidth: 600,
             },
           },
         ],

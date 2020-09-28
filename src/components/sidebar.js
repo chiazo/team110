@@ -7,7 +7,7 @@ const Sidebar = ({ links }) => {
       {/* <h3>Overview</h3> */}
       <div className="sidebar-links">
         {links.map((item, idx) => (
-          <div>
+          <div key={idx + 20}>
             <a href={item.link} key={idx}>
               {item.name}
             </a>

@@ -1,18 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
-import slugs from "github-slugger"
 
 import { Layout, Sidebar } from "../components/"
 
 const preprocessHeading = h => {
-  const cleanValue = h.value
-    .replace(/<(\/)?[^>]+>/g, "")
-    .replace(/\s{2,}/g, " ")
+  let word = h.value.replace(/[^\w\s]/gi, "")
+  word = word.split(" ").join("-")
   return {
     depth: h.depth,
-    value: cleanValue,
-    id: slugs.slug(cleanValue),
+    value: h.value,
+    id: `#${word}`,
   }
+}
+
+const formatName = name => {
+  if (name.indexOf("?") !== -1) {
+    return name.split("?")[0] + "?"
+  }
+  return name.split(":")[0]
 }
 
 export default function Markdown({ data }) {
@@ -22,8 +27,8 @@ export default function Markdown({ data }) {
 
   const links = headings.map(item => {
     return {
-      name: item.value,
-      link: `#${item.id}`,
+      name: formatName(item.value),
+      link: item.id,
     }
   })
   return (
@@ -42,14 +47,14 @@ export default function Markdown({ data }) {
           <section className="contributors">
             <h4>Contributors:</h4>
             {frontmatter.author.map((author, idx) => (
-              <li>
+              <li key={idx}>
                 {author} {idx + 1 !== frontmatter.author.length ? "  |" : ""}
               </li>
             ))}
           </section>
         )}
       </div>
-      {/* <Sidebar links={links} /> */}
+      <Sidebar links={links} />
     </Layout>
   )
 }
