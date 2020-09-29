@@ -24,7 +24,7 @@ Check Shift Overflow and verify you are the Shift Lead before your shift starts.
 
 If there is no queue in office hours, let others call tickets and remain available as a “floater”. TAs can come to you if they run into technical problems they get stuck on. Keep an eye on the general flow of office hours and have a sense of what are the common problems students come in with.
 
-- You should not hover over team members’ shoulders unless asked for help or mentorship directly.
+You should not hover over team members’ shoulders unless asked for help or mentorship directly.
 
 ### When office hours are slow:
 

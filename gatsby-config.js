@@ -27,6 +27,24 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-emojis`,
+            options: {
+              active: true,
+              class: `emoji`,
+              escapeCharacter: ``, // (default: '')
+              // Select the size (available size: 16, 24, 32, 64)
+              size: 64,
+              styles: {
+                display: `inline`,
+                margin: `0`,
+                "margin-top": `1px`,
+                position: `relative`,
+                top: `5px`,
+                width: `25px`,
+              },
+            },
+          },
+          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               maintainCase: true,

@@ -16,6 +16,7 @@
     ul,
     li {
         list-style: circle;
+        font-size: 1.1rem;
     }
     h4 {
         margin-bottom: 0;
@@ -26,5 +27,19 @@
             display: inline;
             margin-right: 8px;
         }
+    }
+
+    .markdown-content {
+        border: 2px solid $purple;
+        box-shadow: 3px 3px 3px rgba($shadow, 0.2);
+        padding: 1rem 2rem;
+    }
+
+    .markdown-content p,
+    li {
+        line-height: 2;
+    }
+    .markdown-content li {
+        margin-bottom: 1rem;
     }
 }
