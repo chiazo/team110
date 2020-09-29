@@ -16,7 +16,7 @@ const Home = () => {
     },
     {
       name: "ShiftOverflow",
-      link: "https://www.shiftoverflow.com",
+      link: "https://shiftoverflow.com",
     },
     {
       name: "Team Career Site",
