@@ -51,3 +51,23 @@ header > div {
 .site-title {
     color: $highlight;
 }
+
+.bm-burger-button {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .bm-burger-bars {
+        background: $text;
+    }
+
+    .bm-burger-button {
+        position: absolute;
+        display: block;
+        width: 35px;
+        opacity: 60%;
+        height: 30px;
+        left: 83%;
+        top: 36px;
+    }
+}

@@ -16,3 +16,12 @@
         margin: 1rem 0;
     }
 }
+
+// adapted for mobile
+@media (max-width: 1100px) {
+    .sidebar {
+        position: relative;
+        left: 0%;
+        top: 50%;
+    }
+}

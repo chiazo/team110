@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { slide as Menu } from "react-burger-menu"
 
 import "normalize.css"
 import "../styles/styles.scss"
@@ -13,7 +14,7 @@ const Header = ({ siteTitle, menuLinks }) => (
           <Link to="/">{siteTitle}</Link>
         </h1>
         <div>
-          <nav>
+          <Menu right>
             <ul>
               {menuLinks.map(link => (
                 <li key={link.name} className="link">
@@ -23,7 +24,7 @@ const Header = ({ siteTitle, menuLinks }) => (
                 </li>
               ))}
             </ul>
-          </nav>
+          </Menu>
         </div>
       </div>
     </div>
