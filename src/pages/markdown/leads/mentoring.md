@@ -15,8 +15,8 @@ author:
 ## My Guiding Principles
 
 1. Each mentee should feel like they can approach at least one older member whenever they need help
-2. One on one communication is way more effective then messages in the big slack channels
-3. Mentors should also feel supported if any problems arise!
+1. One on one communication is way more effective then messages in the big slack channels
+1. Mentors should also feel supported if any problems arise!
 
 ## Mentor / Mentee Matching
 
@@ -31,7 +31,7 @@ In order to make this work, I coordinated with the grad TA (Kaki) to get a list 
   - Introducing Mentee's to their Mentor (owness on the mentor to reach out separately)
   - Asking people to be Mentors
 
-**Things to improve**:
+### Things to improve:
 
 - I think it would be more equitable to create a form open to all TAs so people I might not have reached out to have a chance to express interest in being a mentor! This would have happened the first week of school.
 - I also think it would have been good to touch base with Kris to see if there were specific desired pairings between new and old TAs before I began asking multiple people.
@@ -55,11 +55,11 @@ This was a new addition to the semester with credit going to Claire for suggesti
 ## Example Messages I Sent:
 
 > helloooo! so we're looking for mentors for the 18 new team members. because things are virtual, this will be such a key way to build community. the theme for the semester is ~good vibes~ haha & i think you'd be spectacular at that :smile: just some expectations, this would involve being a resource & semi-regular check ins (for example: scheduling a 30 minute zoom chat every couple of weeks). Are you interested in being one? :slightly_smiling_face:
-
+>
 > hiii, if you have any questions about reapplying to be a TA, definitely reach out to your mentor or me! (also if you are returning to 110 & are interested in bumping up to 10 hours but don’t know what that entails, please please reach out, this was also super confusing for me too). :heart:
-
+>
 > if you have any questions about the new project, please message me or your mentor (we’d love to help) :heart: have a great rest of your week!
-
+>
 > ok, you’re all set to pair with **Mentor** for grading 211 stuff. You should message them and find 1 hour to grade together this coming week. You’ll be leading the grading you do together but definitely ask for any help (& check my message in #new-members for more info)
 
 ## Main Takeaways
@@ -80,11 +80,11 @@ This was a new addition to the semester with credit going to Claire for suggesti
 ## Google Form Questions
 
 1. Are you a mentor or a mentee?
-2. How many times have you met with or spoken to your mentor/mentee?
-3. Any feedback you have! (Have you felt supported, what have you enjoyed, what do you wish could be improved, any highlights, any issues, etc!)
-4. Name (OPTIONAL)
+1. How many times have you met with or spoken to your mentor/mentee?
+1. Any feedback you have! (Have you felt supported, what have you enjoyed, what do you wish could be improved, any highlights, any issues, etc!)
+1. Name (OPTIONAL)
 
-Main Takeaway from the form:
+### Main Takeaway from the form:
 
 - Giving mentors more feedback about how they're doing through out the semester!
 - Planning more mentor / mentee events!
