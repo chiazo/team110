@@ -43,7 +43,7 @@ In order to make this work, I coordinated with the grad TA (Kaki) to get a list 
 - every 2 weeks (aka once a month) messaging mentors to reach out to their mentees
 - sending out a Google Form for feedback 3 months into the semester
 
-A good example would be posting in random is anyone wanted to hop on my Zoom and work on the first problem set. Anticipating what may be difficult and providing an accessible stress free resource (a Zoom link) and a time helped a few people. I also, with the help of Naomi, set up a Zoom meeting for everyone to go over confusing parts of the code we had to finish before the semester began.
+A good example would be posting in random if anyone wanted to hop on my Zoom and work on the first problem set. Anticipating what may be difficult and providing an accessible stress free resource (a Zoom link) and a time helped a few people. I also, with the help of Naomi, set up a Zoom meeting for everyone to go over confusing parts of the code we had to finish before the semester began.
 
 ## Shadowing
 
