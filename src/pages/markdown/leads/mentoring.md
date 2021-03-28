@@ -1,6 +1,6 @@
 ---
 slug: "/mentoring"
-date: "2020-11-09"
+date: "2021-01-19"
 title: "Team Lead Guide to Mentoring"
 author:
   - "Chiazo '22"
@@ -55,11 +55,11 @@ This was a new addition to the semester with credit going to Claire for suggesti
 ## Example Messages I Sent:
 
 > helloooo! so we're looking for mentors for the 18 new team members. because things are virtual, this will be such a key way to build community. the theme for the semester is ~good vibes~ haha & i think you'd be spectacular at that :smile: just some expectations, this would involve being a resource & semi-regular check ins (for example: scheduling a 30 minute zoom chat every couple of weeks). Are you interested in being one? :slightly_smiling_face:
->
+
 > hiii, if you have any questions about reapplying to be a TA, definitely reach out to your mentor or me! (also if you are returning to 110 & are interested in bumping up to 10 hours but don’t know what that entails, please please reach out, this was also super confusing for me too). :heart:
->
+
 > if you have any questions about the new project, please message me or your mentor (we’d love to help) :heart: have a great rest of your week!
->
+
 > ok, you’re all set to pair with **Mentor** for grading 211 stuff. You should message them and find 1 hour to grade together this coming week. You’ll be leading the grading you do together but definitely ask for any help (& check my message in #new-members for more info)
 
 ## Main Takeaways

@@ -2,6 +2,11 @@
     line-height: 1.5;
     max-width: 700px;
 
+    blockquote > p {
+        background-color: $blue;
+        padding: 0.5rem;
+    }
+
     h2,
     h4 {
         font-weight: 500;
@@ -11,15 +16,19 @@
         color: $teal;
     }
     p {
-        font-weight: 400;
+        font-weight: 300;
     }
     ul,
     li {
-        list-style: circle;
-        font-size: 1.1rem;
+        list-style: disc;
+        font-size: 1rem;
     }
     h4 {
         margin-bottom: 0;
+    }
+    b,
+    strong {
+        font-weight: 600;
     }
 
     .contributors {
@@ -41,5 +50,12 @@
     }
     .markdown-content li {
         margin-bottom: 1rem;
+    }
+}
+
+// adapted for mobile
+@media (max-width: 1100px) {
+    .markdown .markdown-content {
+        padding: 1rem;
     }
 }
