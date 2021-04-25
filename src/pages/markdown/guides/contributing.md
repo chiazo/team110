@@ -33,7 +33,7 @@ Clone the repository (https://github.com/comp110/team110) to VSCode.
 Create a branch by writing:
 
 - `git checkout -b <branch-name>`
-  > example: `git checkout -b chiazo-profile`
+  > example: `git checkout -b christine-profile`
 
 ## Pushing to Github
 
@@ -44,4 +44,4 @@ Prepare the branch locally by running the following lines of code:
 - `git commit -m "<commit message here>"` (a short statement describing what you did)
 - `git push origin <branch-name>` (this uploads your draft to github)
 
-Go to **Pull Requests** on the team repo and click the green button to make a Pull Request. On the side where it says **Reviewers** add someone to review your work (for now choose Chiazo)!
+Go to **Pull Requests** on the team repo and click the green button to make a Pull Request. On the side where it says **Reviewers** add someone to review your work (for now choose the documentation lead)!

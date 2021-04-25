@@ -48,6 +48,12 @@
     border: 5px double $text;
 }
 
+.leads .thumbnail {
+    width: 260px;
+    height: auto;
+    background-color: rgba($purple, 0.8);
+}
+
 .content {
     padding: 1rem;
     text-align: left;

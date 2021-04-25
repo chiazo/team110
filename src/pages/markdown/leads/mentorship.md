@@ -1,5 +1,5 @@
 ---
-slug: "/mentoring"
+slug: "/mentorship"
 date: "2021-01-19"
 title: "Team Lead Guide to Mentoring"
 author:
