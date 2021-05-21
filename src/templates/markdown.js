@@ -33,6 +33,7 @@ export default function Markdown({ data }) {
   })
   return (
     <Layout>
+      <Sidebar links={links} />
       <div className="markdown">
         <section>
           <h1>{frontmatter.title}</h1>
@@ -54,7 +55,6 @@ export default function Markdown({ data }) {
           </section>
         )}
       </div>
-      <Sidebar links={links} />
     </Layout>
   )
 }

@@ -14,7 +14,7 @@ Clone the repository (https://github.com/comp110/team110) to VSCode.
 - **Any errors?** Try this:
   > If you can't open this link, you have not been added to the team org on Github. Send your github username to Kaki!
 
-1. Run these 3 commands separately to enter the team site directory, install the site's packages and to see your live changes at **localhost:8000**:
+1. Run these 3 commands separately to enter the team site directory, install the site's packages and to see your live changes at **localhost:8000** (Note: Make sure that you have installed node.js):
 
    > `cd team.comp110.com` > `npm install` > `npm run start`
 
